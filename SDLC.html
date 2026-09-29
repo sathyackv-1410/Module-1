@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Based SDLC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #dbeafe, #fce7f3, #ede9fe);
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4f46e5, #9333ea, #ec4899);
+            color: white;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            padding: 25px 20px;
+            border-radius: 18px;
+            color: white;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 14px 25px rgba(0,0,0,0.25);
+        }
+
+        .card h2 {
+            font-size: 21px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .icon {
+            font-size: 50px;
+        }
+
+        .c1 { background: linear-gradient(135deg, #2563eb, #06b6d4); }
+        .c2 { background: linear-gradient(135deg, #9333ea, #d946ef); }
+        .c3 { background: linear-gradient(135deg, #f97316, #ef4444); }
+        .c4 { background: linear-gradient(135deg, #059669, #22c55e); }
+        .c5 { background: linear-gradient(135deg, #db2777, #f43f5e); }
+        .c6 { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+
+        button {
+            margin: 30px 0;
+            padding: 15px 30px;
+            background: linear-gradient(90deg, #4f46e5, #9333ea);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+            box-shadow: 0 5px 12px #aaa;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #ec4899, #7c3aed);
+        }
+
+        #result {
+            display: none;
+            background: white;
+            color: #4f46e5;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 700px;
+            box-shadow: 0 5px 15px #bbb;
+        }
+
+        footer {
+            background: #312e81;
+            color: white;
+            padding: 18px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🤖 AI Based SDLC</h1>
+    <p>Artificial Intelligence in Software Development Life Cycle</p>
+</header>
+
+<div class="container">
+
+    <h2 style="color:#4f46e5;">🚀 Phases of SDLC Using AI</h2>
+    <p style="color:#444;">Explore how AI supports every stage of software development.</p>
+
+    <div class="cards">
+
+        <div class="card c1">
+            <div class="icon">📋</div>
+            <h2>1. Requirement Analysis</h2>
+            <p>AI analyzes user requirements, identifies project needs and generates software specifications using NLP.</p>
+        </div>
+
+        <div class="card c2">
+            <div class="icon">🎨</div>
+            <h2>2. Planning and Design</h2>
+            <p>AI helps design system architecture, user interfaces, databases and identify possible risks.</p>
+        </div>
+
+        <div class="card c3">
+            <div class="icon">💻</div>
+            <h2>3. Coding and Development</h2>
+            <p>AI assists in writing code, suggesting improvements, finding bugs and improving productivity.</p>
+        </div>
+
+        <div class="card c4">
+            <div class="icon">🧪</div>
+            <h2>4. Testing</h2>
+            <p>AI generates test cases, detects errors, predicts failures and supports automated testing.</p>
+        </div>
+
+        <div class="card c5">
+            <div class="icon">🚀</div>
+            <h2>5. Deployment</h2>
+            <p>AI supports automated deployment, monitors performance and helps detect system issues.</p>
+        </div>
+
+        <div class="card c6">
+            <div class="icon">⚙️</div>
+            <h2>6. Maintenance</h2>
+            <p>AI monitors software, predicts potential failures and suggests updates and fixes.</p>
+        </div>
+
+    </div>
+
+    <button onclick="showSummary()">✨ View SDLC Summary</button>
+
+    <div id="result">
+        <h2>🌟 SDLC Using AI</h2>
+        <p>AI enhances all six phases of the Software Development Life Cycle by automating tasks, reducing manual effort, detecting errors and improving software quality.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>🤖 AI Based SDLC | Smart Software Development</p>
+</footer>
+
+<script>
+    function showSummary() {
+        let result = document.getElementById("result");
+
+        if (result.style.display === "block") {
+            result.style.display = "none";
+        } else {
+            result.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
